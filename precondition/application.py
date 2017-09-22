@@ -408,7 +408,7 @@ class Application:
  #======================================== TEST SAVE INSTITUTION ================================================
  #===============================================================================================================
 
- # save school,daycare,college,district
+ # save school,daycare,college,district 1
  def save_institutions_from_result_page(self):
      self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
      self.driver.implicitly_wait(2)
