@@ -17,9 +17,21 @@ class Application:
      self.driver = webdriver.Chrome()
      self.driver.implicitly_wait(15)
      self.driver.maximize_window()
+
  #LOGIN ===
  def login(self):
      self.driver.get("http://schooldata-test.com/")
+
+
+ def sign_in(self):
+     self.driver.get("http://schooldata-test.com/")
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[1]/div/div/ul/li[3]/div/div[2]/a").click()
+     self.driver.find_element_by_id("email").send_keys("test@gmail.com")
+     self.driver.find_element_by_id("password").send_keys("123123")
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
+     self.driver.implicitly_wait(2)
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[1]/div/div/div/a[1]").click()
+     self.driver.implicitly_wait(2)
 
  #QUIT ===
  def logout(self):
@@ -37,23 +49,18 @@ class Application:
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("daycare_overview.png")
      element = self.driver.find_element_by_xpath(".//*[@id='diversity']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("daycare_diversity.png")
      element = self.driver.find_element_by_xpath(".//*[@id='programs']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("daycare_programs.png")
      element = self.driver.find_element_by_xpath(".//*[@id='finances']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("daycare_finances.png")
-     time.sleep(2)
 
  def search_schools(self):
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("Abbott Loop Elementary")
@@ -64,28 +71,23 @@ class Application:
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("school_overview.png")
      element = self.driver.find_element_by_xpath(".//*[@id='teachers']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("school_teachers.png")
      element = self.driver.find_element_by_xpath(".//*[@id='diversity']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("school_diversity.png")
      element = self.driver.find_element_by_xpath(".//*[@id='programs']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("school_programs.png")
      element = self.driver.find_element_by_xpath(".//*[@id='finances']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("school_finances.png")
-     time.sleep(2)
+
 
  def search_districts(self):
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("Saratoga Union School")
@@ -96,57 +98,45 @@ class Application:
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("district_overview.png")
      element = self.driver.find_element_by_xpath(".//*[@id='teachers']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("district_teachers.png")
      element = self.driver.find_element_by_xpath(".//*[@id='diversity']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("district_diversity.png")
      element = self.driver.find_element_by_xpath(".//*[@id='programs']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("district_programs.png")
      element = self.driver.find_element_by_xpath(".//*[@id='finances']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("district_finances.png")
-     time.sleep(2)
 
  def search_colleges(self):
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("Smith College")
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/div/div[1]/span").click()
      time.sleep(5)
      self.driver.get_screenshot_as_file("college.png")
-     #
      element = self.driver.find_element_by_xpath(".//*[@id='overview']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("college_overview.png")
-     #
      element = self.driver.find_element_by_xpath(".//*[@id='diversity']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("college_diversity.png")
-     #
      element = self.driver.find_element_by_xpath(".//*[@id='teachers']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("college_teachers.png")
      element = self.driver.find_element_by_xpath(".//*[@id='programs']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     self.driver.get_screenshot_as_file("college_programs.png")
+
 
 
  # ==============================================================================================================
@@ -407,3 +397,36 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[4]/div")
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[5]/div")
      self.driver.get_screenshot_as_file("city_no_state.png")
+
+
+ #===============================================================================================================
+ #===============================================================================================================
+ #===============================================================================================================
+
+ #self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/div/div/div[1]/table/tbody/tr[6]/td[1]/a[1]/p").click()
+ #===============================================================================================================
+ #======================================== TEST SAVE INSTITUTION ================================================
+ #===============================================================================================================
+
+ # save school,daycare,college,district
+ def save_institutions_from_result_page(self):
+     self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
+     self.driver.implicitly_wait(2)
+     self.driver.find_element_by_css_selector("#react-select-4--option-2").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("Saratoga")
+     time.sleep(1)
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[1]/div/div/div/a[1]").click()
+     self.driver.find_element_by_xpath("//button[@type='submit']").click()
+     time.sleep(3)
+     #ASSERT
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[1]/div")
+     element = self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/div/div/div[1]/table/tbody/tr[6]/td[1]/a[1]/p")
+     actions = ActionChains(self.driver)
+     actions.move_to_element(element).perform()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/div/div/div[1]/table/tbody/tr[6]/td[6]/button").click()
+     self.driver.implicitly_wait(5)
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/div/div/div[1]/table/tbody/tr[6]/td[6]/button").click()
+     self.driver.find_element_by_xpath("//button[@type=’button’]").click()
+     self.driver.implicitly_wait(5)
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[9]/td[6]/button")
+     self.driver.implicitly_wait(5)
