@@ -1,6 +1,5 @@
 {
   "save_institution.py::test_save_institutions_result_page": true,
-  "search_from_autocomp.py::test_search_daycare": true,
-  "test_search.py::test_search_zipcode_with_state": true,
-  "test_search.py::test_zipcode_no_criterion": true
+  "save_institution.py::test_save_school": true,
+  "search_from_autocomp.py::test_search_daycare": true
 }

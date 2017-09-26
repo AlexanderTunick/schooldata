@@ -128,4 +128,11 @@ def test_zipcode_no_criterion(app):
 def test_search_city_no_state(app):
     app.login()
     app.search_city_no_state()
+    app.assort5()
+    app.logout()
+
+def test_search_with_magnifying_glass(app):
+    app.login()
+    app.search_with_magnifying_glass()
+    app.assort5()
     app.logout()

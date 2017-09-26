@@ -7,10 +7,20 @@ test_classes=[
 #=================== Save From rusult page ===========================
 #=================== Save From rusult page ===========================
 
-def test_save_institutions_result_page(app):
+def test_open_close_watchlist(app):
     app.sign_in()
-    app.save_institutions_from_result_page()
+    app.open_close_watchlist()
     app.logout()
+
+def test_save_school(app):
+    app.sign_in()
+    app.save_school()
+    app.delete_saved()
+    app.logout()
+
+def test_save_from_product_page(app):
+    app.sign_in()
+    app.save_from_product_page()
 
 
 #=================== Save From Product page ===========================

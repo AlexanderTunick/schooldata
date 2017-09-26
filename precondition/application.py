@@ -8,6 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import TimeoutException
 import pytest
+from faker import Faker
 
 
 
@@ -24,18 +25,37 @@ class Application:
 
 
  def sign_in(self):
-     self.driver.get("http://schooldata-test.com/")
-     self.driver.find_element_by_xpath("//*[@id='root']/div/div[1]/div/div/ul/li[3]/div/div[2]/a").click()
+     self.driver.get("http://schooldata-test.com/login")
      self.driver.find_element_by_id("email").send_keys("test@gmail.com")
-     self.driver.find_element_by_id("password").send_keys("123123")
+     self.driver.find_element_by_id("password").send_keys("123456")
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
      self.driver.implicitly_wait(2)
-     self.driver.find_element_by_xpath("//*[@id='root']/div/div[1]/div/div/div/a[1]").click()
-     self.driver.implicitly_wait(2)
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input")
 
  #QUIT ===
  def logout(self):
      self.driver.quit()
+
+ def assort5(self):
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[1]/div")
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[2]/div")
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[3]/div")
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[4]/div")
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[5]/div")
+
+ def delete_saved(self):
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/div[2]/div[1]/button").click()
+     time.sleep(1)
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/div[2]/div[1]/button").click()
+     try:
+         element = WebDriverWait(self.driver, 10).until(
+             EC.text_to_be_present_in_element((By.CSS_SELECTOR, ".watchList__no-saved-ins-message___216CE"), "No saved items...")
+         )
+     finally:
+         self.driver.get_screenshot_as_file("saved_deleted.png")
+
+
+
 
  # ==============================================================================================================
  #======================================== TEST SEARCH FROM AUTOCOMPLETE ===================================
@@ -390,43 +410,84 @@ class Application:
      time.sleep(1)
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
-     self.driver.find_element_by_xpath("//button[@type='submit']").click()
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[1]/div")
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[2]/div")
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[3]/div")
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[4]/div")
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[5]/div")
+     #Assort5
      self.driver.get_screenshot_as_file("city_no_state.png")
 
+ def search_with_magnifying_glass(self):
+     time.sleep(1)
+     self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
+     self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-6']").click()
+     f = Faker()
+     field = self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input")
+     field.send_keys(f.random_element(elements=('los', 'los', 'los')))
+     time.sleep(1)
+     self.driver.find_element_by_xpath("//button[@type='submit']").click()
+     self.driver.implicitly_wait(5)
+     self.driver.find_element_by_xpath("//a[text()='Saddleback Valley Unified SD']")
+     #Assert
+     N = 2
+     actions = ActionChains(self.driver)
+     actions.send_keys(Keys.SPACE * N)
+     actions.perform()
 
  #===============================================================================================================
  #===============================================================================================================
  #===============================================================================================================
 
- #self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/div/div/div[1]/table/tbody/tr[6]/td[1]/a[1]/p").click()
+
  #===============================================================================================================
- #======================================== TEST SAVE INSTITUTION ================================================
+ #======================================== TEST Saved search ================================================
  #===============================================================================================================
+
+ #activate diactivate watchlist
+ def open_close_watchlist(self):
+     self.driver.find_element_by_css_selector(".button__button___JTdqz.watchList__watch-list__btn--open___lM8w_").click()
+     time.sleep(1)
+     self.driver.find_element_by_css_selector(".button__button___JTdqz.watchList__watch-list__btn--close___2xU3A").click()
+     time.sleep(1)
 
  # save school,daycare,college,district 11
- def save_institutions_from_result_page(self):
+ def save_school(self):
      self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
-     self.driver.implicitly_wait(2)
-     self.driver.find_element_by_css_selector("#react-select-4--option-2").click()
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("Saratoga")
-     time.sleep(1)
-     self.driver.find_element_by_xpath("//*[@id='root']/div/div[1]/div/div/div/a[1]").click()
+     self.driver.find_element_by_xpath(".//*[@id='react-select-3--option-6']").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input").send_keys("saratoga")
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
-     time.sleep(3)
-     #ASSERT
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[1]/div")
-     element = self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/div/div/div[1]/table/tbody/tr[6]/td[1]/a[1]/p")
+     self.driver.implicitly_wait(5)
+     time.sleep(2)
      actions = ActionChains(self.driver)
-     actions.move_to_element(element).perform()
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/div/div/div[1]/table/tbody/tr[6]/td[6]/button").click()
+     actions.send_keys(Keys.SPACE)
+     actions.perform()
+     time.sleep(1)
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[5]/td[6]/button").click()
+     time.sleep(6)
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[6]/td[6]/button").click()
      self.driver.implicitly_wait(5)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/div/div/div[1]/table/tbody/tr[6]/td[6]/button").click()
-     self.driver.find_element_by_xpath("//button[@type=’button’]").click()
-     self.driver.implicitly_wait(5)
-     self.driver.find_element_by_xpath("//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[9]/td[6]/button")
-     self.driver.implicitly_wait(5)
+     try:
+         element = WebDriverWait(self.driver, 10).until(
+             EC.text_to_be_present_in_element((By.XPATH, "//*[@id='root']/div/div[2]/div/div[2]/div/a/h3"), "Los Gatos High School")
+         )
+     finally:
+         self.driver.implicitly_wait(5)
+     try:
+         element = WebDriverWait(self.driver, 10).until(
+             EC.text_to_be_present_in_element((By.XPATH, "//*[@id='root']/div/div[2]/div/div[2]/div[2]/a/h3"),"Saratoga High School")
+             )
+     finally:
+             time.sleep(1)
+     #DELETE SAVED
+
+ def save_from_product_page(self):
+     self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
+     self.driver.find_element_by_xpath(".//*[@id='react-select-3--option-6']").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input").send_keys("saratoga union")
+     self.driver.find_element_by_xpath("//button[@type='submit']").click()
+     time.sleep(2)
+     self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+     time.sleep(1)
+     self.driver.find_element_by_xpath("//*[p/text()='Saratoga Union School District']").click()
+     time.sleep(5)
+     N = 5
+     actions = ActionChains(self.driver)
+     actions.send_keys(Keys.ARROW_UP * N)
+     actions.perform()
+     time.sleep(5)
