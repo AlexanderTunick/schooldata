@@ -9,8 +9,8 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import TimeoutException
 import pytest
 from faker import Faker
+f = Faker()
 #wait = WebDriverWait(webdriver, 10)
-
 
 
 class Application:
@@ -24,7 +24,6 @@ class Application:
  def login(self):
      self.driver.get("http://schooldata-test.com/")
 
-
  def sign_in(self):
      self.driver.get("http://schooldata-test.com/login")
      self.driver.find_element_by_id("email").send_keys("test@gmail.com")
@@ -33,6 +32,19 @@ class Application:
      self.driver.implicitly_wait(2)
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input")
 
+ def sign_up(self):
+     self.driver.get("http://schooldata-test.com/register")
+     self.driver.find_element_by_id("name").send_keys("TEST BOT")
+     mail = self.driver.find_element_by_id("email")
+     mail.send_keys(f.email())
+     self.driver.find_element_by_id("password").send_keys("123456")
+     self.driver.find_element_by_id("passwordConfirmation").send_keys("123456")
+     self.driver.find_element_by_css_selector(".geosuggest__input").send_keys("Dallas")
+     try:
+         address = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".geosuggest__suggests.addressautocomplete__list___2XxOe")))
+     finally:
+         self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[6]/div/div[2]/ul/li[1]/span").click()
+         time.sleep(1)
  #QUIT ===
  def logout(self):
      self.driver.quit()
@@ -44,6 +56,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[4]/div")
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[5]/div")
 
+ #DELETE
  def delete_saved(self):
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/div[2]/div[1]/button").click()
      time.sleep(1)
@@ -474,7 +487,8 @@ class Application:
              EC.text_to_be_present_in_element((By.XPATH, "//*[@id='root']/div/div[2]/div/div[2]/div[2]/a/h3"),"Saratoga High School")
              )
      finally:
-             time.sleep(1)
+      time.sleep(1)
+      self.driver.get_screenshot_as_file("saved_schools.png")
      #DELETE SAVED
 
  def save_from_product_page(self):
@@ -498,12 +512,73 @@ class Application:
              EC.text_to_be_present_in_element((By.XPATH, "//*[@id='root']/div/div[2]/div/div[2]/div/a/h3"), "Saratoga Union School District")
          )
      finally:
-       try:
+      self.driver.get_screenshot_as_file("saved_from_product_page.png")
+      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/div[2]/div[1]/button").click()
+     try:
            myElem = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".watchList__watch-list___31MkF.watchList__watch-list--open___QwSLh")))
            print("OPENED SAVED SEARCH IS PRESENT")
-       except TimeoutException:
+     except TimeoutException:
            print('OPENED SAVED SEARCH IS NOT PRESENT')
-       finally:
+     finally:
            self.driver.implicitly_wait(10)
            self.driver.find_element_by_css_selector(".button__button___JTdqz.watchList__watch-list__btn--open___lM8w_")
-           time.sleep(5)
+           time.sleep(2)
+
+ def activate_link_in_watchlist(self):
+     self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
+     self.driver.find_element_by_xpath(".//*[@id='react-select-3--option-6']").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input").send_keys("saratoga")
+     self.driver.find_element_by_xpath("//button[@type='submit']").click()
+     self.driver.implicitly_wait(5)
+     time.sleep(2)
+     actions = ActionChains(self.driver)
+     actions.send_keys(Keys.SPACE)
+     actions.perform()
+     time.sleep(1)
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[5]/td[6]/button").click()
+     try:
+           myElem = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//*[h3/text()='Los Gatos High School']")))
+           print("OPENED ")
+     except TimeoutException:
+           print('DIDNT OPENED')
+     finally:
+      self.driver.find_element_by_xpath("//*[h3/text()='Los Gatos High School']").click()
+      time.sleep(1)
+      self.driver.get_screenshot_as_file("link_in_watchlist.png")
+      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/div[2]/div[1]/button").click()
+      time.sleep(1)
+
+ def all_schools_link(self):
+     self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
+     self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-6']").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("Saratoga Union")
+     self.driver.find_element_by_xpath("//button[@type='submit']").click()
+     time.sleep(2)
+     element = self.driver.find_element_by_xpath("//*[p/text()='Saratoga Elementary School']")
+     element.send_keys(Keys.SPACE + Keys.SPACE)
+     time.sleep(1)
+     self.driver.find_element_by_css_selector(".searchResultsTable__link___3Q335.searchResultsTable__allSchools___vK2YH").click()
+     try:
+         elem = WebDriverWait(self.driver, 10).until(EC.text_to_be_present_in_element((By.XPATH, "//*[p/text()='Argonaut Elementary School']"), "Argonaut Elementary School"))
+         print("OPENED ")
+     except TimeoutException:
+         print('DIDNT OPENED')
+     finally:
+         #ASSERT
+      self.driver.find_element_by_xpath("//*[p/text()='Argonaut Elementary School']")
+      self.driver.get_screenshot_as_file("all_schools_link.png")
+
+#===============================================================================================================
+ #===============================================================================================================
+ #===============================================================================================================
+
+
+ #===============================================================================================================
+ #======================================== TEST REGISTRATION ================================================
+ #===============================================================================================================
+
+ def register_student(self):
+     time.sleep(1)
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
+     student = WebDriverWait(self.driver, 0).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".reviewPage__panel___36xzG.panel")))
+
