@@ -9,6 +9,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import TimeoutException
 import pytest
 from faker import Faker
+#wait = WebDriverWait(webdriver, 10)
 
 
 
@@ -485,9 +486,24 @@ class Application:
      self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
      time.sleep(1)
      self.driver.find_element_by_xpath("//*[p/text()='Saratoga Union School District']").click()
-     time.sleep(5)
+     time.sleep(2)
      N = 5
      actions = ActionChains(self.driver)
      actions.send_keys(Keys.ARROW_UP * N)
      actions.perform()
-     time.sleep(5)
+     time.sleep(2)
+     self.driver.find_element_by_css_selector(".button__button___JTdqz.institutionPanel__save-btn___2SKd5").click()
+     try:
+         element = WebDriverWait(self.driver, 10).until(
+             EC.text_to_be_present_in_element((By.XPATH, "//*[@id='root']/div/div[2]/div/div[2]/div/a/h3"), "Saratoga Union School District")
+         )
+     finally:
+       try:
+           myElem = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".watchList__watch-list___31MkF.watchList__watch-list--open___QwSLh")))
+           print("OPENED SAVED SEARCH IS PRESENT")
+       except TimeoutException:
+           print('OPENED SAVED SEARCH IS NOT PRESENT')
+       finally:
+           self.driver.implicitly_wait(10)
+           self.driver.find_element_by_css_selector(".button__button___JTdqz.watchList__watch-list__btn--open___lM8w_")
+           time.sleep(5)
