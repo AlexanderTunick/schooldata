@@ -677,4 +677,4 @@ class Application:
      self.driver.find_element_by_css_selector(".userMenu__option___3jenC").click()
      time.sleep(1)
      self.driver.find_element_by_css_selector(".button__button___JTdqz.personalProfile__btn-delete___1sxMt").click()
-     time.sleep(1)
+     time.sleep(2)
