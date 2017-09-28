@@ -1,4 +1,5 @@
 {
   "save_institution.py::test_save_institutions_result_page": true,
-  "search_from_autocomp.py::test_search_daycare": true
+  "search_from_autocomp.py::test_search_daycare": true,
+  "test_registration.py::test_register_parent": true
 }

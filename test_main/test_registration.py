@@ -6,3 +6,34 @@ tests_classes = [
 def test_register_student(app):
     app.sign_up()
     app.register_student()
+    app.log_out()
+
+def test_register_parent(app):
+    app.sign_up()
+    app.register_parent()
+    app.log_out()
+
+def test_register_other(app):
+    app.sign_up()
+    app.register_other()
+    app.log_out()
+
+def test_register_community_member(app):
+    app.sign_up()
+    app.register_member()
+    app.log_out()
+
+def test_egister_teacher_em1_em2ver(app):
+    app.sign_up()
+    app.register_teacher_em1_em2ver()
+    app.log_out()
+
+def test_register_teacher_em1_em2unver(app):
+    app.sign_up()
+    app.register_teacher_em1_em2unver()
+    app.log_out()
+
+def test_register_student_verified_email(app):
+    app.sign_up_student()
+    app.register_student_verified_email()
+    app.log_out()
