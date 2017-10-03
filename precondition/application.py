@@ -44,7 +44,7 @@ class Application:
      try:
          address = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".geosuggest__suggests.addressautocomplete__list___2XxOe")))
      finally:
-         self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[6]/div/div[2]/ul/li[1]/span").click()
+         self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[6]/div/div/div/div[2]/ul/li[1]/span").click()
          time.sleep(1)
 
  def sign_up_student(self):
@@ -58,8 +58,7 @@ class Application:
          address = WebDriverWait(self.driver, 10).until(
              EC.element_to_be_clickable((By.CSS_SELECTOR, ".geosuggest__suggests.addressautocomplete__list___2XxOe")))
      finally:
-         self.driver.find_element_by_xpath(
-             ".//*[@id='root']/div/div[2]/div/form/div[1]/div[6]/div/div[2]/ul/li[1]/span").click()
+         self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[6]/div/div/div/div[2]/ul/li[1]/span").click()
          time.sleep(1)
 
  #QUIT ==============
@@ -97,7 +96,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/div/div/span").click()
      time.sleep(5)
      self.driver.get_screenshot_as_file("daycare.png")
-     element = self.driver.find_element_by_xpath(".//*[@id='overview']")
+     element = self.driver.find_element_by_xpath(".//*[@id='general']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
@@ -119,7 +118,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/div/div/span").click()
      time.sleep(5)
      self.driver.get_screenshot_as_file("school.png")
-     element = self.driver.find_element_by_xpath(".//*[@id='overview']")
+     element = self.driver.find_element_by_xpath(".//*[@id='general']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
@@ -146,7 +145,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/div/div/span").click()
      time.sleep(5)
      self.driver.get_screenshot_as_file("district.png")
-     element = self.driver.find_element_by_xpath(".//*[@id='overview']")
+     element = self.driver.find_element_by_xpath(".//*[@id='general']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
@@ -172,7 +171,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/div/div[1]/span").click()
      time.sleep(5)
      self.driver.get_screenshot_as_file("college.png")
-     element = self.driver.find_element_by_xpath(".//*[@id='overview']")
+     element = self.driver.find_element_by_xpath(".//*[@id='general']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
@@ -199,7 +198,7 @@ class Application:
      self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-1']").click()
      #check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[1]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Daycare']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
      #ASSERT
@@ -210,7 +209,7 @@ class Application:
      self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-1']").click()
      #check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[5]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='College']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
@@ -220,7 +219,7 @@ class Application:
      self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-1']").click()
      #check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[2]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Elementary School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
@@ -230,7 +229,7 @@ class Application:
      self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-1']").click()
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[3]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Middle School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
@@ -240,7 +239,7 @@ class Application:
      self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-1']").click()
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[4]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='High School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
@@ -250,8 +249,8 @@ class Application:
      self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-1']").click()
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[2]/div/label").click()
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[3]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Middle School']").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Elementary School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
@@ -261,8 +260,8 @@ class Application:
      self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-1']").click()
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[2]/div/label").click()
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[4]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Elementary School']").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='High School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
@@ -272,8 +271,8 @@ class Application:
      self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-1']").click()
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[3]/div/label").click()
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[4]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='High School']").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Middle School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
@@ -300,7 +299,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-1']").click()
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("s")
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[1]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Daycare']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
      # ASSERT
@@ -312,7 +311,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-37']").click()
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("a")
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[2]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Elementary School']").click()
      time.sleep(1)
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
@@ -326,7 +325,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-7']").click()
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("j")
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[3]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Middle School']").click()
      time.sleep(1)
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
@@ -341,7 +340,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-7']").click()
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("s")
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[4]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='High School']").click()
      time.sleep(1)
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
@@ -354,7 +353,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-6']").click()
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("s")
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[5]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='College']").click()
      time.sleep(1)
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
@@ -366,8 +365,8 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-6']").click()
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("s")
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[2]/div/label").click()
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[3]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Elementary School']").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Middle School']").click()
      time.sleep(1)
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
@@ -382,8 +381,8 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-6']").click()
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("d")
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[2]/div/label").click()
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[4]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Elementary School']").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='High School']").click()
      time.sleep(1)
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
@@ -398,8 +397,8 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='react-select-2--option-6']").click()
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("s")
      # check box
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[3]/div/label").click()
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[2]/div[4]/div/label").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='Middle School']").click()
+     self.driver.find_element_by_xpath(".//*[label/text()='High School']").click()
      time.sleep(1)
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
@@ -455,7 +454,7 @@ class Application:
      time.sleep(1)
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      self.driver.implicitly_wait(5)
-     self.driver.find_element_by_xpath("//a[text()='Saddleback Valley Unified SD']")
+     self.driver.find_element_by_xpath("//a[text()='Los Angeles Co Office of Ed']")
      #Assert
      N = 2
      actions = ActionChains(self.driver)
@@ -605,7 +604,7 @@ class Application:
 
  def register_parent(self):
      time.sleep(1)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[3]/div/div/label").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[2]/div/div/div/label").click()
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
      try:
       parent = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".homePage__welcome___PPNOA")))
@@ -614,7 +613,7 @@ class Application:
 
  def register_other(self):
      time.sleep(1)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[4]/div/div/label").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[5]/div/div/div/label").click()
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
      try:
       parent = WebDriverWait(self.driver, 10).until(
@@ -624,7 +623,7 @@ class Application:
 
  def register_member(self):
      time.sleep(1)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[5]/div/div/label").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[4]/div/div/div/label").click()
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
      try:
          parent = WebDriverWait(self.driver, 10).until(
@@ -633,7 +632,7 @@ class Application:
          self.driver.get_screenshot_as_file("register_member.png")
 
  def register_teacher_em1_em2ver(self):
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[2]/div/div/label").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[1]/div/div/div/label").click()
      time.sleep(1)
      got = ActionChains(self.driver)
      got.send_keys(Keys.SPACE)
@@ -649,7 +648,7 @@ class Application:
          self.driver.get_screenshot_as_file("register_teacher_em1_em2Ver.png")
 
  def register_teacher_em1_em2unver(self):
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[2]/div/div/label").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[1]/div/div/div/label").click()
      time.sleep(1)
      got = ActionChains(self.driver)
      got.send_keys(Keys.SPACE)
@@ -672,6 +671,22 @@ class Application:
              EC.presence_of_element_located((By.CSS_SELECTOR, ".panel.verifiedEducatorPage__panel___1V7VW")))
      finally:
          self.driver.get_screenshot_as_file("register_student_verified_email.png")
+     self.driver.find_element_by_css_selector(".dropdown__header___11L62.userMenu__header___2KR06").click()
+     time.sleep(1)
+     self.driver.find_element_by_css_selector(".userMenu__option___3jenC").click()
+     time.sleep(1)
+     self.driver.find_element_by_css_selector(".button__button___JTdqz.personalProfile__btn-delete___1sxMt").click()
+     time.sleep(2)
+
+ def register_parent_verified_email(self):
+     time.sleep(1)
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[2]/div/div/div/label").click()
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
+     try:
+         student = WebDriverWait(self.driver, 0).until(
+             EC.presence_of_element_located((By.CSS_SELECTOR, ".panel.verifiedEducatorPage__panel___1V7VW")))
+     finally:
+         self.driver.get_screenshot_as_file("register_parent_verified_email.png")
      self.driver.find_element_by_css_selector(".dropdown__header___11L62.userMenu__header___2KR06").click()
      time.sleep(1)
      self.driver.find_element_by_css_selector(".userMenu__option___3jenC").click()

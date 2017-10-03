@@ -23,7 +23,7 @@ def test_register_community_member(app):
     app.register_member()
     app.log_out()
 
-def test_egister_teacher_em1_em2ver(app):
+def test_register_teacher_em1_em2ver(app):
     app.sign_up()
     app.register_teacher_em1_em2ver()
     app.log_out()
@@ -36,4 +36,9 @@ def test_register_teacher_em1_em2unver(app):
 def test_register_student_verified_email(app):
     app.sign_up_student()
     app.register_student_verified_email()
+    app.log_out()
+
+def test_register_parent_verified_email(app):
+    app.sign_up_student()
+    app.register_parent_verified_email()
     app.log_out()
