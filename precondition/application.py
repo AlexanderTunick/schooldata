@@ -693,3 +693,22 @@ class Application:
      time.sleep(1)
      self.driver.find_element_by_css_selector(".button__button___JTdqz.personalProfile__btn-delete___1sxMt").click()
      time.sleep(2)
+
+ def register_other_verified_email(self):
+     time.sleep(1)
+     self.driver.find_element_by_xpath(".//*[label/text()='Other']").click()
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
+     try:
+         student = WebDriverWait(self.driver, 0).until(
+             EC.presence_of_element_located((By.CSS_SELECTOR, ".panel.verifiedEducatorPage__panel___1V7VW")))
+     finally:
+         self.driver.get_screenshot_as_file("register_parent_verified_email.png")
+     self.driver.find_element_by_css_selector(".dropdown__header___11L62.userMenu__header___2KR06").click()
+     time.sleep(1)
+     self.driver.find_element_by_css_selector(".userMenu__option___3jenC").click()
+     time.sleep(1)
+     self.driver.find_element_by_css_selector(".button__button___JTdqz.personalProfile__btn-delete___1sxMt").click()
+     self.driver.find_element_by_css_selector(".homePage__search-bar___35y1k")
+     time.sleep(2)
+
+

@@ -42,3 +42,8 @@ def test_register_parent_verified_email(app):
     app.sign_up_student()
     app.register_parent_verified_email()
     app.log_out()
+
+def test_register_other_verified_email(app):
+    app.sign_up_student()
+    app.register_other_verified_email()
+    app.log_out()

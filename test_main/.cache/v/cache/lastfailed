@@ -1,6 +1,7 @@
 {
   "save_institution.py::test_save_institutions_result_page": true,
   "search_from_autocomp.py::test_search_daycare": true,
+  "test_search.py::test_search": true,
   "test_search.py::test_search_daycare": true,
   "test_search.py::test_search_s_letter_mid_high_state": true
 }
