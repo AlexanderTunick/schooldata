@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f2d6cd9-76e7-45f1-823a-8e1f6af9bc9c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/a_letter__elementary_state.png" afterPath="$PROJECT_DIR$/test_main/a_letter__elementary_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/city_no_state.png" afterPath="$PROJECT_DIR$/test_main/city_no_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/college.png" afterPath="$PROJECT_DIR$/test_main/college.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/d_letter__elem_high_state.png" afterPath="$PROJECT_DIR$/test_main/d_letter__elem_high_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/daycare.png" afterPath="$PROJECT_DIR$/test_main/daycare.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/district.png" afterPath="$PROJECT_DIR$/test_main/district.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/j_letter__middle_state.png" afterPath="$PROJECT_DIR$/test_main/j_letter__middle_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/middle_empty_tfield.png" afterPath="$PROJECT_DIR$/test_main/middle_empty_tfield.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_member.png" afterPath="$PROJECT_DIR$/test_main/register_member.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_other.png" afterPath="$PROJECT_DIR$/test_main/register_other.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_parent.png" afterPath="$PROJECT_DIR$/test_main/register_parent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_parent_verified_email.png" afterPath="$PROJECT_DIR$/test_main/register_parent_verified_email.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_student.png" afterPath="$PROJECT_DIR$/test_main/register_student.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_student_verified_email.png" afterPath="$PROJECT_DIR$/test_main/register_student_verified_email.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_teacher_em1_em2UnVer.png" afterPath="$PROJECT_DIR$/test_main/register_teacher_em1_em2UnVer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_teacher_em1_em2Ver.png" afterPath="$PROJECT_DIR$/test_main/register_teacher_em1_em2Ver.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__college_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__college_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__daycare_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__daycare_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__elem_middle_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__elem_middle_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__high_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__high_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__middle_high_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__middle_high_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/school.png" afterPath="$PROJECT_DIR$/test_main/school.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/zipcode_no_criteria.png" afterPath="$PROJECT_DIR$/test_main/zipcode_no_criteria.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/zipcode_with_state.png" afterPath="$PROJECT_DIR$/test_main/zipcode_with_state.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/precondition/application.py" afterPath="$PROJECT_DIR$/precondition/application.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/.cache/v/cache/lastfailed" afterPath="$PROJECT_DIR$/test_main/.cache/v/cache/lastfailed" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +42,8 @@
       <file leaf-file-name="application.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/precondition/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="380">
+              <caret line="58" column="68" lean-forward="false" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -26,11 +51,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="save_institution.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_main/save_institution.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test_search.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_main/test_search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="600">
+              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -40,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/test_main/test_registration.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="675">
-              <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+              <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -75,8 +110,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="35" />
-    <option name="y" value="27" />
+    <option name="x" value="92" />
+    <option name="y" value="59" />
     <option name="width" value="1828" />
     <option name="height" value="981" />
   </component>
@@ -98,6 +133,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,8 +156,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -138,8 +173,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test for test_search.test_search">
-    <configuration name="py.test for test_registration.test_register_other_verified_email" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.py.test for test_registration.test_register_student_verified_email">
+    <configuration name="py.test for save_institution.test_open_close_watchlist" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -151,7 +186,22 @@
       <module name="schooldata" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration.test_register_other_verified_email&quot;" />
+      <option name="_new_target" value="&quot;save_institution.test_open_close_watchlist&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="py.test for test_registration.test_register_student_verified_email" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="schooldata" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_registration.test_register_student_verified_email&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="py.test for test_registration.test_register_teacher_em1_em2unver" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -169,7 +219,7 @@
       <option name="_new_target" value="&quot;test_registration.test_register_teacher_em1_em2unver&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for test_search.test_search" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for test_search.test_search_middle_empty" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -181,10 +231,10 @@
       <module name="schooldata" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_search.test_search&quot;" />
+      <option name="_new_target" value="&quot;test_search.test_search_middle_empty&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for test_search.test_search_college_empty" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in test_registration.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -196,10 +246,10 @@
       <module name="schooldata" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_search.test_search_college_empty&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_main/test_registration.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="py.test for test_search.test_search_colleges" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in test_search.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -211,38 +261,23 @@
       <module name="schooldata" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_search.test_search_colleges&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="py.test for test_search.test_search_daycare" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_main" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="schooldata" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_search.test_search_daycare&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_main/test_search.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_college_empty" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_colleges" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_daycare" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_other_verified_email" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for save_institution.test_open_close_watchlist" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_search.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_middle_empty" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_registration.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_student_verified_email" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_other_verified_email" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_daycare" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_colleges" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_college_empty" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_student_verified_email" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_registration.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_middle_empty" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_search.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for save_institution.test_open_close_watchlist" />
       </list>
     </recent_temporary>
   </component>
@@ -362,57 +397,64 @@
       <option name="project" value="LOCAL" />
       <updated>1507539051635</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="a">
+      <created>1507539668841</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1507539668841</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_test_search_test_search - 2017.10.04 at 15h 44m 40s.xml">
-      <configuration name="py.test for test_search.test_search" configurationId="tests" />
+    <history-entry file="py_test_for_save_institution_test_open_close_watchlist - 2017.10.09 at 12h 49m 55s.xml">
+      <configuration name="py.test for save_institution.test_open_close_watchlist" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_search_test_search - 2017.10.04 at 15h 46m 40s.xml">
-      <configuration name="py.test for test_search.test_search" configurationId="tests" />
+    <history-entry file="py_test_for_save_institution_test_open_close_watchlist - 2017.10.09 at 12h 52m 12s.xml">
+      <configuration name="py.test for save_institution.test_open_close_watchlist" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_search_test_search - 2017.10.04 at 16h 02m 50s.xml">
-      <configuration name="py.test for test_search.test_search" configurationId="tests" />
+    <history-entry file="py_test_for_save_institution_test_open_close_watchlist - 2017.10.09 at 12h 54m 25s.xml">
+      <configuration name="py.test for save_institution.test_open_close_watchlist" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_search_test_search - 2017.10.04 at 16h 03m 04s.xml">
-      <configuration name="py.test for test_search.test_search" configurationId="tests" />
+    <history-entry file="py_test_for_save_institution_test_open_close_watchlist - 2017.10.09 at 12h 54m 46s.xml">
+      <configuration name="py.test for save_institution.test_open_close_watchlist" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_search_test_search - 2017.10.04 at 16h 03m 31s.xml">
-      <configuration name="py.test for test_search.test_search" configurationId="tests" />
+    <history-entry file="py_test_for_test_registration_test_register_student_verified_email - 2017.10.09 at 14h 12m 17s.xml">
+      <configuration name="py.test for test_registration.test_register_student_verified_email" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_search_test_search - 2017.10.04 at 16h 04m 05s.xml">
-      <configuration name="py.test for test_search.test_search" configurationId="tests" />
+    <history-entry file="py_test_for_test_registration_test_register_student_verified_email - 2017.10.09 at 14h 12m 45s.xml">
+      <configuration name="py.test for test_registration.test_register_student_verified_email" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_search_test_search - 2017.10.04 at 16h 06m 25s.xml">
-      <configuration name="py.test for test_search.test_search" configurationId="tests" />
+    <history-entry file="py_test_for_test_search_test_search_middle_empty - 2017.10.09 at 13h 45m 51s.xml">
+      <configuration name="py.test for test_search.test_search_middle_empty" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_search_test_search - 2017.10.04 at 16h 08m 30s.xml">
-      <configuration name="py.test for test_search.test_search" configurationId="tests" />
+    <history-entry file="py_test_for_test_search_test_search_middle_empty - 2017.10.09 at 13h 47m 46s.xml">
+      <configuration name="py.test for test_search.test_search_middle_empty" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_search_test_search - 2017.10.04 at 16h 10m 24s.xml">
-      <configuration name="py.test for test_search.test_search" configurationId="tests" />
+    <history-entry file="py_test_in_test_registration_py - 2017.10.09 at 13h 52m 23s.xml">
+      <configuration name="py.test in test_registration.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_search_test_search - 2017.10.04 at 16h 11m 07s.xml">
-      <configuration name="py.test for test_search.test_search" configurationId="tests" />
+    <history-entry file="py_test_in_test_search_py - 2017.10.09 at 13h 40m 20s.xml">
+      <configuration name="py.test in test_search.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="27" width="1828" height="981" extended-state="0" />
+    <frame x="92" y="59" width="1828" height="981" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2206047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22732362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23250565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39512855" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39503387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -434,7 +476,8 @@
     <MESSAGE value="last_student verified email" />
     <MESSAGE value="last 1" />
     <MESSAGE value="last 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="last 12" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -775,43 +818,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/selenium/webdriver/common/action_chains.py" />
     <entry file="file://$PROJECT_DIR$/test_main/save_institution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/selenium/webdriver/common/action_chains.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_main/test_registration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_main/test_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="135">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/precondition/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state relative-caret-position="380">
+          <caret line="58" column="68" lean-forward="false" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_main/test_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_main/test_registration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

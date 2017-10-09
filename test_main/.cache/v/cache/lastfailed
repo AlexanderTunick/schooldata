@@ -1,7 +1,20 @@
 {
+  "save_institution.py::test_open_close_watchlist": true,
   "save_institution.py::test_save_institutions_result_page": true,
   "search_from_autocomp.py::test_search_daycare": true,
+  "test_registration.py::test_register_other_verified_email": true,
+  "test_registration.py::test_register_parent_verified_email": true,
+  "test_registration.py::test_register_student": true,
+  "test_registration.py::test_register_student_verified_email": true,
+  "test_registration.py::test_register_teacher_em1_em2ver": true,
   "test_search.py::test_search": true,
-  "test_search.py::test_search_daycare": true,
-  "test_search.py::test_search_s_letter_mid_high_state": true
+  "test_search.py::test_search_college_empty": true,
+  "test_search.py::test_search_d_letter_all_states": true,
+  "test_search.py::test_search_daycare_empty": true,
+  "test_search.py::test_search_elem_middle_empty": true,
+  "test_search.py::test_search_elementary_empty": true,
+  "test_search.py::test_search_elementary_high_empty": true,
+  "test_search.py::test_search_high_empty": true,
+  "test_search.py::test_search_middle_high_empty": true,
+  "test_search.py::test_search_with_magnifying_glass": true
 }

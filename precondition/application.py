@@ -12,7 +12,7 @@ from faker import Faker
 f = Faker()
 #wait = WebDriverWait(webdriver, 10)
 
-# ASDASDSAFASF
+
 class Application:
 
  def __init__(self):
@@ -26,11 +26,12 @@ class Application:
 
  def sign_in(self):
      self.driver.get("http://schooldata-test.com/login")
-     down = ActionChains(self.driver)
-     down.send_keys(Keys.SPACE).perform()
      self.driver.find_element_by_id("email").send_keys("test@gmail.com")
      self.driver.find_element_by_id("password").send_keys("123456")
-     self.driver.find_element_by_css_selector(".button__button___JTdqz.commonForm__submit-btn___1hNXb").click()
+     try:
+         button = WebDriverWait(self.driver,10).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='root']/div/div[2]/div/form/div[2]/button")))
+     finally:
+      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
      try:
          element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, ".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input")))
      finally:
@@ -54,7 +55,7 @@ class Application:
  def sign_up_student(self):
      self.driver.get("http://schooldata-test.com/register")
      self.driver.find_element_by_id("name").send_keys("AutotestBot")
-     self.driver.find_element_by_id("email").send_keys("alexander.tunick@itrexgroup.com")
+     self.driver.find_element_by_id("email").send_keys("travismac2030@gmail.com")
      self.driver.find_element_by_id("password").send_keys("NewUser123456")
      self.driver.find_element_by_id("passwordConfirmation").send_keys("NewUser123456")
      self.driver.find_element_by_css_selector(".geosuggest__input").send_keys("Dallas")
@@ -216,7 +217,9 @@ class Application:
      self.driver.find_element_by_xpath(".//*[label/text()='College']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[1]/div")
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[2]/div")
+     self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[3]/div")
      self.driver.get_screenshot_as_file("college_empty_tfield.png")
 
  def search_elementary_empty_field(self):
@@ -236,7 +239,11 @@ class Application:
      self.driver.find_element_by_xpath(".//*[label/text()='Middle School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
+     #ASSER
+     self.driver.find_elements_by_xpath("//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[1]/div")
+     self.driver.find_elements_by_xpath("//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[2]/div")
+     self.driver.find_elements_by_xpath("//*[@id='root']/div/div[2]/div/form/div[1]/div/div[1]/div/label[3]/div")
+     self.driver.find_element_by_css_selector(".geosuggest__input")
      self.driver.get_screenshot_as_file("middle_empty_tfield.png")
 
  def search_high_empty_field(self):
@@ -246,7 +253,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[label/text()='High School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
+     self.driver.find_element_by_css_selector(".geosuggest__input")
      self.driver.get_screenshot_as_file("high_empty_tfield.png")
 
  def search_elementary_middle_empty_field(self):
@@ -257,7 +264,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[label/text()='Elementary School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
+     self.driver.find_element_by_css_selector(".geosuggest__input")
      self.driver.get_screenshot_as_file("elementary_middle_empty_tfield.png")
 
  def search_elementary_high_empty_field(self):
@@ -268,7 +275,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[label/text()='High School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
+     self.driver.find_element_by_css_selector(".geosuggest__input")
      self.driver.get_screenshot_as_file("elementary_high_empty_tfield.png")
 
  def search_middle_high_empty_field(self):
@@ -279,7 +286,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[label/text()='Middle School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
+     self.driver.find_element_by_css_selector(".geosuggest__input")
      self.driver.get_screenshot_as_file("middle_high_empty_tfield.png")
 
  # ==============================================================================================================
