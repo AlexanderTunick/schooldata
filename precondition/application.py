@@ -12,7 +12,7 @@ from faker import Faker
 f = Faker()
 #wait = WebDriverWait(webdriver, 10)
 
-
+# ASDASDSAFASF
 class Application:
 
  def __init__(self):
