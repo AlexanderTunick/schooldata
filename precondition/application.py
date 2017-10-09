@@ -26,11 +26,15 @@ class Application:
 
  def sign_in(self):
      self.driver.get("http://schooldata-test.com/login")
+     down = ActionChains(self.driver)
+     down.send_keys(Keys.SPACE).perform()
      self.driver.find_element_by_id("email").send_keys("test@gmail.com")
      self.driver.find_element_by_id("password").send_keys("123456")
-     self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
-     self.driver.implicitly_wait(2)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input")
+     self.driver.find_element_by_css_selector(".button__button___JTdqz.commonForm__submit-btn___1hNXb").click()
+     try:
+         element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, ".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input")))
+     finally:
+      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input")
 
  # SIGN UP REGISTRATION ==========
  def sign_up(self):
@@ -492,16 +496,15 @@ class Application:
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[5]/td[6]/button").click()
      time.sleep(6)
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[6]/td[6]/button").click()
-     self.driver.implicitly_wait(5)
      try:
          element = WebDriverWait(self.driver, 10).until(
-             EC.text_to_be_present_in_element((By.XPATH, "//*[@id='root']/div/div[2]/div/div[2]/div/a/h3"), "Los Gatos High School")
+             EC.text_to_be_present_in_element((By.XPATH, "//*[@id='root']/div/div[2]/div/div[2]/div[2]"), "Argonaut Elementary School")
          )
      finally:
          self.driver.implicitly_wait(5)
      try:
          element = WebDriverWait(self.driver, 10).until(
-             EC.text_to_be_present_in_element((By.XPATH, "//*[@id='root']/div/div[2]/div/div[2]/div[2]/a/h3"),"Saratoga High School")
+             EC.text_to_be_present_in_element((By.XPATH, ".//*[@id='root']/div/div[2]/div/div[2]/div[1]"),"Saratoga High School")
              )
      finally:
       time.sleep(1)
@@ -514,15 +517,13 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input").send_keys("saratoga union")
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(2)
-     self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+     #self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
      time.sleep(1)
-     self.driver.find_element_by_xpath("//*[p/text()='Saratoga Union School District']").click()
+     #self.driver.find_element_by_xpath("//*[p/text()='Saratoga Union School District']").click()
      time.sleep(2)
-     N = 5
      actions = ActionChains(self.driver)
-     actions.send_keys(Keys.ARROW_UP * N)
-     actions.perform()
-     time.sleep(2)
+     actions.send_keys(Keys.ARROW_UP).perform()
+     time.sleep(1)
      self.driver.find_element_by_css_selector(".button__button___JTdqz.institutionPanel__save-btn___2SKd5").click()
      try:
          element = WebDriverWait(self.driver, 10).until(
@@ -539,6 +540,7 @@ class Application:
      finally:
            self.driver.implicitly_wait(10)
            self.driver.find_element_by_css_selector(".button__button___JTdqz.watchList__watch-list__btn--open___lM8w_")
+
            time.sleep(2)
 
  def activate_link_in_watchlist(self):
@@ -641,8 +643,7 @@ class Application:
      time.sleep(1)
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
      try:
-         parent = WebDriverWait(self.driver, 10).until(
-             EC.presence_of_element_located((By.CSS_SELECTOR, ".panel.verifiedEducatorPage__panel___1V7VW")))
+         parent = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".panel.verifiedEducatorPage__panel___1V7VW")))
      finally:
          time.sleep(1)
          self.driver.get_screenshot_as_file("register_teacher_em1_em2Ver.png")
@@ -667,7 +668,7 @@ class Application:
      time.sleep(1)
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
      try:
-         student = WebDriverWait(self.driver, 0).until(
+         student = WebDriverWait(self.driver, 10).until(
              EC.presence_of_element_located((By.CSS_SELECTOR, ".panel.verifiedEducatorPage__panel___1V7VW")))
      finally:
          self.driver.get_screenshot_as_file("register_student_verified_email.png")
