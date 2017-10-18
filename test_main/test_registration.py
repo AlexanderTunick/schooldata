@@ -36,14 +36,17 @@ def test_register_teacher_em1_em2unver(app):
 def test_register_student_verified_email(app):
     app.sign_up_student()
     app.register_student_verified_email()
+    app.delete_profile()
     app.log_out()
 
 def test_register_parent_verified_email(app):
     app.sign_up_student()
     app.register_parent_verified_email()
+    app.delete_profile()
     app.log_out()
 
 def test_register_other_verified_email(app):
     app.sign_up_student()
     app.register_other_verified_email()
+    app.delete_profile()
     app.log_out()

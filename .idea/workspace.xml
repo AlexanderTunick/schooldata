@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f2d6cd9-76e7-45f1-823a-8e1f6af9bc9c" name="Default" comment="">
+    <list default="true" id="5f2d6cd9-76e7-45f1-823a-8e1f6af9bc9c" name="Default" comment="fixed cases for product page,">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_main/test_enter_via_popup.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/member_signup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/other_signup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/parent_signup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/register_student_verified_email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/student_signup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/teacher_signup_em1_em2UnVer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/teacher_signup_em1_em2Ver.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/a_letter__elementary_state.png" afterPath="$PROJECT_DIR$/test_main/a_letter__elementary_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/all_schools_link.png" afterPath="$PROJECT_DIR$/test_main/all_schools_link.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/city_no_state.png" afterPath="$PROJECT_DIR$/test_main/city_no_state.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/college.png" afterPath="$PROJECT_DIR$/test_main/college.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/college_empty_tfield.png" afterPath="$PROJECT_DIR$/test_main/college_empty_tfield.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/d_letter__elem_high_state.png" afterPath="$PROJECT_DIR$/test_main/d_letter__elem_high_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/d_letter_allstates.png" afterPath="$PROJECT_DIR$/test_main/d_letter_allstates.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/daycare.png" afterPath="$PROJECT_DIR$/test_main/daycare.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/daycare_empty_tfield.png" afterPath="$PROJECT_DIR$/test_main/daycare_empty_tfield.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/district.png" afterPath="$PROJECT_DIR$/test_main/district.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/elementary_empty_tfield.png" afterPath="$PROJECT_DIR$/test_main/elementary_empty_tfield.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/elementary_high_empty_tfield.png" afterPath="$PROJECT_DIR$/test_main/elementary_high_empty_tfield.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/elementary_middle_empty_tfield.png" afterPath="$PROJECT_DIR$/test_main/elementary_middle_empty_tfield.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/high_empty_tfield.png" afterPath="$PROJECT_DIR$/test_main/high_empty_tfield.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/j_letter__middle_state.png" afterPath="$PROJECT_DIR$/test_main/j_letter__middle_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/link_in_watchlist.png" afterPath="$PROJECT_DIR$/test_main/link_in_watchlist.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/middle_empty_tfield.png" afterPath="$PROJECT_DIR$/test_main/middle_empty_tfield.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/middle_high_empty_tfield.png" afterPath="$PROJECT_DIR$/test_main/middle_high_empty_tfield.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_member.png" afterPath="$PROJECT_DIR$/test_main/register_member.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_other.png" afterPath="$PROJECT_DIR$/test_main/register_other.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_parent.png" afterPath="$PROJECT_DIR$/test_main/register_parent.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_parent_verified_email.png" afterPath="$PROJECT_DIR$/test_main/register_parent_verified_email.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_student.png" afterPath="$PROJECT_DIR$/test_main/register_student.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_student_verified_email.png" afterPath="$PROJECT_DIR$/test_main/register_student_verified_email.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_teacher_em1_em2UnVer.png" afterPath="$PROJECT_DIR$/test_main/register_teacher_em1_em2UnVer.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_teacher_em1_em2Ver.png" afterPath="$PROJECT_DIR$/test_main/register_teacher_em1_em2Ver.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__college_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__college_state.png" />
@@ -23,12 +40,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__elem_middle_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__elem_middle_state.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__high_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__high_state.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__middle_high_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__middle_high_state.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/saved_deleted.png" afterPath="$PROJECT_DIR$/test_main/saved_deleted.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/school.png" afterPath="$PROJECT_DIR$/test_main/school.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/zipcode_no_criteria.png" afterPath="$PROJECT_DIR$/test_main/zipcode_no_criteria.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/zipcode_with_state.png" afterPath="$PROJECT_DIR$/test_main/zipcode_with_state.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/precondition/application.py" afterPath="$PROJECT_DIR$/precondition/application.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/.cache/v/cache/lastfailed" afterPath="$PROJECT_DIR$/test_main/.cache/v/cache/lastfailed" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/test_registration.py" afterPath="$PROJECT_DIR$/test_main/test_registration.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +61,8 @@
       <file leaf-file-name="application.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/precondition/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="58" column="68" lean-forward="false" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
+            <state relative-caret-position="101">
+              <caret line="623" column="115" lean-forward="false" selection-start-line="623" selection-start-column="115" selection-end-line="623" selection-end-column="115" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -51,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="save_institution.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_main/save_institution.py">
+      <file leaf-file-name="test_registration.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_main/test_registration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="56">
+              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -64,18 +83,8 @@
       <file leaf-file-name="test_search.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_main/test_search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_registration.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_main/test_registration.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+            <state relative-caret-position="162">
+              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -103,15 +112,16 @@
         <option value="$PROJECT_DIR$/test_search/test_search.py" />
         <option value="$PROJECT_DIR$/test_search/save_institution.py" />
         <option value="$PROJECT_DIR$/test_main/save_institution.py" />
-        <option value="$PROJECT_DIR$/test_main/test_registration.py" />
         <option value="$PROJECT_DIR$/test_main/test_search.py" />
+        <option value="$PROJECT_DIR$/test_main/enter_via_popup.py" />
+        <option value="$PROJECT_DIR$/test_main/test_registration.py" />
         <option value="$PROJECT_DIR$/precondition/application.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="92" />
-    <option name="y" value="59" />
+    <option name="x" value="86" />
+    <option name="y" value="81" />
     <option name="width" value="1828" />
     <option name="height" value="981" />
   </component>
@@ -133,8 +143,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,6 +164,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,8 +183,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test for test_registration.test_register_student_verified_email">
-    <configuration name="py.test for save_institution.test_open_close_watchlist" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.py.test for test_registration.test_register_student">
+    <configuration name="py.test for save_institution.test_all_schools_link" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -186,10 +196,10 @@
       <module name="schooldata" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;save_institution.test_open_close_watchlist&quot;" />
+      <option name="_new_target" value="&quot;save_institution.test_all_schools_link&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for test_registration.test_register_student_verified_email" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for test_registration.test_register_student" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -201,10 +211,10 @@
       <module name="schooldata" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration.test_register_student_verified_email&quot;" />
+      <option name="_new_target" value="&quot;test_registration.test_register_student&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for test_registration.test_register_teacher_em1_em2unver" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in save_institution.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -216,23 +226,8 @@
       <module name="schooldata" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration.test_register_teacher_em1_em2unver&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="py.test for test_search.test_search_middle_empty" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_main" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="schooldata" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_search.test_search_middle_empty&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_main/save_institution.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="py.test in test_registration.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -265,19 +260,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for save_institution.test_open_close_watchlist" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_search.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_middle_empty" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in save_institution.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for save_institution.test_all_schools_link" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_search.py" />
       <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_registration.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_student_verified_email" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_student" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_student_verified_email" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_student" />
         <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_registration.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_middle_empty" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_search.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for save_institution.test_open_close_watchlist" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_search.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in save_institution.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for save_institution.test_all_schools_link" />
       </list>
     </recent_temporary>
   </component>
@@ -404,62 +399,69 @@
       <option name="project" value="LOCAL" />
       <updated>1507539668841</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="a">
+      <created>1507560816076</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1507560816076</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_save_institution_test_open_close_watchlist - 2017.10.09 at 12h 49m 55s.xml">
-      <configuration name="py.test for save_institution.test_open_close_watchlist" configurationId="tests" />
+    <history-entry file="py_test_for_save_institution_test_all_schools_link - 2017.10.16 at 12h 52m 08s.xml">
+      <configuration name="py.test for save_institution.test_all_schools_link" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_save_institution_test_open_close_watchlist - 2017.10.09 at 12h 52m 12s.xml">
-      <configuration name="py.test for save_institution.test_open_close_watchlist" configurationId="tests" />
+    <history-entry file="py_test_for_save_institution_test_save_from_product_page - 2017.10.16 at 12h 44m 22s.xml">
+      <configuration name="py.test for save_institution.test_save_from_product_page" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_save_institution_test_open_close_watchlist - 2017.10.09 at 12h 54m 25s.xml">
-      <configuration name="py.test for save_institution.test_open_close_watchlist" configurationId="tests" />
+    <history-entry file="py_test_for_save_institution_test_save_from_product_page - 2017.10.16 at 12h 47m 41s.xml">
+      <configuration name="py.test for save_institution.test_save_from_product_page" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_save_institution_test_open_close_watchlist - 2017.10.09 at 12h 54m 46s.xml">
-      <configuration name="py.test for save_institution.test_open_close_watchlist" configurationId="tests" />
+    <history-entry file="py_test_for_save_institution_test_save_school - 2017.10.16 at 12h 36m 26s.xml">
+      <configuration name="py.test for save_institution.test_save_school" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_registration_test_register_student_verified_email - 2017.10.09 at 14h 12m 17s.xml">
-      <configuration name="py.test for test_registration.test_register_student_verified_email" configurationId="tests" />
+    <history-entry file="py_test_for_save_institution_test_save_school - 2017.10.16 at 12h 43m 15s.xml">
+      <configuration name="py.test for save_institution.test_save_school" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_registration_test_register_student_verified_email - 2017.10.09 at 14h 12m 45s.xml">
-      <configuration name="py.test for test_registration.test_register_student_verified_email" configurationId="tests" />
+    <history-entry file="py_test_for_save_institution_test_save_school - 2017.10.16 at 12h 43m 47s.xml">
+      <configuration name="py.test for save_institution.test_save_school" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_search_test_search_middle_empty - 2017.10.09 at 13h 45m 51s.xml">
-      <configuration name="py.test for test_search.test_search_middle_empty" configurationId="tests" />
+    <history-entry file="py_test_for_test_registration_test_register_student - 2017.10.18 at 18h 06m 01s.xml">
+      <configuration name="py.test for test_registration.test_register_student" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_search_test_search_middle_empty - 2017.10.09 at 13h 47m 46s.xml">
-      <configuration name="py.test for test_search.test_search_middle_empty" configurationId="tests" />
+    <history-entry file="py_test_in_save_institution_py - 2017.10.18 at 17h 02m 08s.xml">
+      <configuration name="py.test in save_institution.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_registration_py - 2017.10.09 at 13h 52m 23s.xml">
+    <history-entry file="py_test_in_test_registration_py - 2017.10.18 at 17h 44m 45s.xml">
       <configuration name="py.test in test_registration.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_search_py - 2017.10.09 at 13h 40m 20s.xml">
+    <history-entry file="py_test_in_test_search_py - 2017.10.18 at 17h 07m 39s.xml">
       <configuration name="py.test in test_search.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="92" y="59" width="1828" height="981" extended-state="0" />
+    <frame x="86" y="81" width="1828" height="981" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22732362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2469205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23250565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39503387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23250565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844242" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844242" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -484,51 +486,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_main/test_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="117" column="19" lean-forward="false" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/precondition/application.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_main/save_institution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_main/test_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="117" column="19" lean-forward="true" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/precondition/application.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -819,37 +776,69 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/selenium/webdriver/common/action_chains.py" />
+    <entry file="file://$PROJECT_DIR$/test_main/Login_pop_review.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_main/login_pop_result.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_main/login_pop_product.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_main/register_teacher_em1_em2UnVer.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_main/all_schools_link.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_main/save_institution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="307">
+          <caret line="30" column="10" lean-forward="true" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/precondition/application.py">
+    <entry file="file://$PROJECT_DIR$/test_main/test_enter_via_popup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="58" column="68" lean-forward="false" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_main/test_search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        <state relative-caret-position="162">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_main/test_registration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+        <state relative-caret-position="56">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/precondition/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="623" column="115" lean-forward="false" selection-start-line="623" selection-start-column="115" selection-end-line="623" selection-end-column="115" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

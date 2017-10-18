@@ -28,10 +28,9 @@ class Application:
      self.driver.get("http://schooldata-test.com/login")
      self.driver.find_element_by_id("email").send_keys("test@gmail.com")
      self.driver.find_element_by_id("password").send_keys("123456")
-     try:
-         button = WebDriverWait(self.driver,10).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='root']/div/div[2]/div/form/div[2]/button")))
-     finally:
-      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
+     time.sleep(1)
+     self.driver.find_element_by_css_selector(".button__button___JTdqz.commonForm__submit-btn___1hNXb").click()
+
      try:
          element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, ".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input")))
      finally:
@@ -40,31 +39,46 @@ class Application:
  # SIGN UP REGISTRATION ==========
  def sign_up(self):
      self.driver.get("http://schooldata-test.com/register")
-     self.driver.find_element_by_id("name").send_keys("AutotestBot")
+     self.driver.find_element_by_id("firstName").send_keys("AutoBot")
+     self.driver.find_element_by_id("lastName").send_keys("Test")
      mail = self.driver.find_element_by_id("email")
      mail.send_keys(f.email())
      self.driver.find_element_by_id("password").send_keys("NewUser123456")
      self.driver.find_element_by_id("passwordConfirmation").send_keys("NewUser123456")
+     time.sleep(1)
+     self.driver.execute_script("window.scrollTo(50, 300);")
      self.driver.find_element_by_css_selector(".geosuggest__input").send_keys("Dallas")
      try:
          address = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".geosuggest__suggests.addressautocomplete__list___2XxOe")))
      finally:
-         self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[6]/div/div/div/div[2]/ul/li[1]/span").click()
+         self.driver.find_element_by_css_selector(".geosuggest__item.addressautocomplete__item___3rnxu>span").click()
          time.sleep(1)
 
  def sign_up_student(self):
      self.driver.get("http://schooldata-test.com/register")
-     self.driver.find_element_by_id("name").send_keys("AutotestBot")
-     self.driver.find_element_by_id("email").send_keys("travismac2030@gmail.com")
-     self.driver.find_element_by_id("password").send_keys("NewUser123456")
-     self.driver.find_element_by_id("passwordConfirmation").send_keys("NewUser123456")
+     self.driver.find_element_by_id("firstName").send_keys("AutoBot")
+     self.driver.find_element_by_id("lastName").send_keys("Test")
+     self.driver.find_element_by_id("email").send_keys("drakemac2030@gmail.com")
+     self.driver.find_element_by_id("password").send_keys("123456")
+     self.driver.find_element_by_id("passwordConfirmation").send_keys("123456")
+     time.sleep(1)
+     self.driver.execute_script("window.scrollTo(50, 300);")
      self.driver.find_element_by_css_selector(".geosuggest__input").send_keys("Dallas")
      try:
          address = WebDriverWait(self.driver, 10).until(
              EC.element_to_be_clickable((By.CSS_SELECTOR, ".geosuggest__suggests.addressautocomplete__list___2XxOe")))
      finally:
-         self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[6]/div/div/div/div[2]/ul/li[1]/span").click()
+         self.driver.find_element_by_css_selector(".geosuggest__item.addressautocomplete__item___3rnxu>span").click()
          time.sleep(1)
+
+ def delete_profile(self):
+     self.driver.find_element_by_css_selector(".dropdown__header___11L62.userMenu__header___2KR06").click()
+     time.sleep(1)
+     self.driver.find_element_by_css_selector(".userMenu__option___3jenC").click()
+     time.sleep(1)
+     self.driver.find_element_by_css_selector(".button__button___JTdqz.personalProfile__btn-delete___1sxMt").click()
+     self.driver.find_element_by_css_selector(".homePage__search-bar___35y1k")
+     time.sleep(2)
 
  #QUIT ==============
  def log_out(self):
@@ -88,6 +102,10 @@ class Application:
          )
      finally:
          self.driver.get_screenshot_as_file("saved_deleted.png")
+ #DELETE 2
+ def delete_1_saved(self):
+     self.driver.find_element_by_css_selector(".button__button___JTdqz.watchList__watch-list-card__btn--remove___4CdsZ").click()
+     time.sleep(1)
 #  ===== ===== ===== ===== ===== ===== ===== =============== ===== ===== ===== ========== =====
     # === PRECONDITION PRECONDITION PRECONDITION PRECONDITION PRECONDITION PRECONDITION PRECONDITION PRECONDITION ===
 #===== ======  ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== =====
@@ -96,7 +114,7 @@ class Application:
  # ==============================================================================================================
  #======================================== TEST SEARCH FROM AUTOCOMPLETE ===================================
  # ==============================================================================================================
- def search_daycares(self):
+ def search_daycares(self): #Daycare 100
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/input").send_keys("Parkdale Private")
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[2]/div/div/span").click()
      time.sleep(5)
@@ -113,7 +131,7 @@ class Application:
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     element = self.driver.find_element_by_xpath(".//*[@id='finances']")
+     #element = self.driver.find_element_by_xpath(".//*[@id='finances']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
@@ -162,7 +180,7 @@ class Application:
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     element = self.driver.find_element_by_xpath(".//*[@id='programs']")
+     #element = self.driver.find_element_by_xpath(".//*[@id='programs']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
@@ -207,8 +225,9 @@ class Application:
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
      #ASSERT
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
+     self.driver.find_element_by_css_selector(".geosuggest__input")
      self.driver.get_screenshot_as_file("daycare_empty_tfield.png")
+
 
  def search_college_empty_field(self):
      self.driver.find_element_by_css_selector(".homePage__closed-arrow___2HRFM").click()
@@ -229,7 +248,8 @@ class Application:
      self.driver.find_element_by_xpath(".//*[label/text()='Elementary School']").click()
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
      time.sleep(3)
-     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div/div[2]/div[1]/div[1]/input")
+     #ASSERT
+     self.driver.find_element_by_css_selector(".geosuggest__input")
      self.driver.get_screenshot_as_file("elementary_empty_tfield.png")
 
  def search_middle_empty_field(self):
@@ -500,20 +520,17 @@ class Application:
      actions.send_keys(Keys.SPACE)
      actions.perform()
      time.sleep(1)
-     self.driver.find_element_by_xpath("//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[5]/td[6]/button").click()
+     #Los Gatos High School
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[7]/td[6]/button").click()
      time.sleep(6)
-     self.driver.find_element_by_xpath("//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[6]/td[6]/button").click()
+     #Saratoga High School
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[8]/td[6]/button").click()
      try:
          element = WebDriverWait(self.driver, 10).until(
-             EC.text_to_be_present_in_element((By.XPATH, "//*[@id='root']/div/div[2]/div/div[2]/div[2]"), "Argonaut Elementary School")
+             EC.visibility_of_element_located((By.CSS_SELECTOR, ".watchList__watch-list__body___10hTS"))
          )
      finally:
-         self.driver.implicitly_wait(5)
-     try:
-         element = WebDriverWait(self.driver, 10).until(
-             EC.text_to_be_present_in_element((By.XPATH, ".//*[@id='root']/div/div[2]/div/div[2]/div[1]"),"Saratoga High School")
-             )
-     finally:
+      self.driver.implicitly_wait(5)
       time.sleep(1)
       self.driver.get_screenshot_as_file("saved_schools.png")
      #DELETE SAVED
@@ -523,10 +540,9 @@ class Application:
      self.driver.find_element_by_xpath(".//*[@id='react-select-3--option-6']").click()
      self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/form/div[1]/div[2]/input").send_keys("saratoga union")
      self.driver.find_element_by_xpath("//button[@type='submit']").click()
-     time.sleep(2)
-     #self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
      time.sleep(1)
-     #self.driver.find_element_by_xpath("//*[p/text()='Saratoga Union School District']").click()
+     self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+     self.driver.find_element_by_xpath("//*[p/text()='Saratoga Union School District']").click()
      time.sleep(2)
      actions = ActionChains(self.driver)
      actions.send_keys(Keys.ARROW_UP).perform()
@@ -561,7 +577,7 @@ class Application:
      actions.send_keys(Keys.SPACE)
      actions.perform()
      time.sleep(1)
-     self.driver.find_element_by_xpath("//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[5]/td[6]/button").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[3]/div/div/div/div[1]/table/tbody/tr[7]/td[6]/button").click()
      try:
            myElem = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//*[h3/text()='Los Gatos High School']")))
            print("OPENED ")
@@ -605,6 +621,7 @@ class Application:
 
  def register_student(self):
      time.sleep(1)
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/form/div[1]/div[1]/div[3]/div/div/div/label").click()
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
      try:
       student = WebDriverWait(self.driver, 0).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".reviewPage__panel___36xzG.panel")))
@@ -646,7 +663,7 @@ class Application:
      got = ActionChains(self.driver)
      got.send_keys(Keys.SPACE)
      got.perform()
-     self.driver.find_element_by_id("workEmail").send_keys("alexdrakeua@gmail.com") #===== Work EMAIL =====
+     self.driver.find_element_by_id("workEmail").send_keys("drakemac2030@gmail.com") #===== Work EMAIL =====
      time.sleep(1)
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
      try:
@@ -666,7 +683,7 @@ class Application:
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
      try:
          parent = WebDriverWait(self.driver, 10).until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, ".popup__popup__body___UKUmr>div>p"),
-                                                                                    "We have registered your personal email address, but we are unable to verify your school email address against our database of active educators. Please try re-entering your school email or click here to submit a request for us to verify your email."))
+            "We have registered your personal email address, but we are unable to verify your school email address against our database of active educators."))
      finally:
          time.sleep(1)
          self.driver.get_screenshot_as_file("register_teacher_em1_em2UnVer.png")
@@ -707,8 +724,7 @@ class Application:
      self.driver.find_element_by_xpath(".//*[label/text()='Other']").click()
      self.driver.find_element_by_xpath("//*[@id='root']/div/div[2]/div/form/div[2]/button").click()
      try:
-         student = WebDriverWait(self.driver, 0).until(
-             EC.presence_of_element_located((By.CSS_SELECTOR, ".panel.verifiedEducatorPage__panel___1V7VW")))
+         student = WebDriverWait(self.driver, 0).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".panel.verifiedEducatorPage__panel___1V7VW")))
      finally:
          self.driver.get_screenshot_as_file("register_parent_verified_email.png")
      self.driver.find_element_by_css_selector(".dropdown__header___11L62.userMenu__header___2KR06").click()
@@ -720,3 +736,93 @@ class Application:
      time.sleep(2)
 
 
+#===============================================================================================================
+ #===============================================================================================================
+ #===============================================================================================================
+
+
+ #===============================================================================================================
+ #======================================== Login, Registration through Pop-up ================================================
+ #===============================================================================================================
+
+ def login_pop_write_review_page(self):
+     self.driver.find_element_by_link_text("Write a Review").click()
+     try:
+      popup = WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".popup__popup___1SW_t")))
+     finally:
+       self.driver.find_element_by_id("email").send_keys("test@gmail.com")
+     self.driver.find_element_by_id("password").send_keys("123456")
+     #remember me
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[5]/div/div[2]/form/div[2]/div/div/div/label").click()
+     self.driver.find_element_by_xpath(".//*[@id='root']/div/div[5]/div/div[2]/form/div[2]/button").click()
+     #ASSER
+     try:
+      review_page = WebDriverWait(self.driver, 5).until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, ".reviewPage__description___Q48yN"), "Reviews help the Schooldata community learn about the areas that are most important to their needs. By adding comments or ranking at least one of the below categories, YOU are helping educate our users through your experience."))
+     finally:
+
+      try:
+          review_page = WebDriverWait(self.driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".reviewPage__description___Q48yN")))
+      finally:
+       self.driver.find_element_by_css_selector(".reviewPage__query-wrapper___2dEDH>input").send_keys("Correct!!!")
+      try:
+           review_page = WebDriverWait(self.driver, 5).until(
+               EC.text_to_be_present_in_element((By.CSS_SELECTOR, ".reviewPage__description___Q48yN"), "Reviews help the Schooldata community learn about the areas that are most important to their needs. By adding comments or ranking at least one of the below categories, YOU are helping educate our users through your experience."))
+      finally:
+       time.sleep(1)
+       self.driver.get_screenshot_as_file("Login_pop_review.png")
+
+ def login_pop_search_result(self):
+      self.driver.find_element_by_css_selector(".homePage__query-wrapper___2CdIM>input").send_keys("saratoga")
+      self.driver.find_element_by_css_selector(".button__button___JTdqz.homePage__btn-search___2hBG6").click()
+      try:
+       resultpage = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, "//*[p/text()='Saratoga Elementary School']")))
+      finally:
+       self.driver.find_element_by_xpath(".//*[@id='root']/div/div[2]/div/div/div/div[1]/table/tbody/tr[1]/td[6]/button").click()
+      try:
+          popup = WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".popup__popup___1SW_t")))
+          print("OK")
+      except TimeoutException:
+          print('DIDNT OPENED')
+      finally:
+       self.driver.find_element_by_id("email").send_keys("test@gmail.com")
+       self.driver.find_element_by_id("password").send_keys("123456")
+       # remember me
+       self.driver.find_element_by_xpath(".//*[@id='root']/div/div[5]/div/div[2]/form/div[2]/div/div/div/label").click()
+       self.driver.find_element_by_xpath(".//*[@id='root']/div/div[5]/div/div[2]/form/div[2]/button").click()
+       time.sleep(3)
+       text = self.driver.find_element_by_css_selector(".watchList__watch-list-card__header___3oaYC").text
+       assert text == "Saratoga Elementary School"
+       print("Test is correct")
+       self.driver.get_screenshot_as_file("login_pop_result.png")
+       #precondition DELETE 2
+
+ def login_pop_product(self):
+      self.driver.find_element_by_css_selector(".homePage__query-wrapper___2CdIM>input").send_keys("saratoga")
+      self.driver.find_element_by_css_selector(".button__button___JTdqz.homePage__btn-search___2hBG6").click()
+      try:
+         resultpage = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, "//*[p/text()='Saratoga Elementary School']")))
+      finally:
+       self.driver.find_element_by_xpath("//*[p/text()='Saratoga Elementary School']").click()
+       try:
+           resultpage = WebDriverWait(self.driver, 10).until(
+               EC.presence_of_element_located((By.CSS_SELECTOR, ".button__button___JTdqz.institutionPanel__save-btn___2SKd5")))
+       finally:
+        self.driver.find_element_by_css_selector(".button__button___JTdqz.institutionPanel__save-btn___2SKd5").click()
+        self.driver.find_element_by_id("email").send_keys("test@gmail.com")
+        self.driver.find_element_by_id("password").send_keys("123456")
+        # remember me
+        self.driver.find_element_by_xpath(
+            ".//*[@id='root']/div/div[5]/div/div[2]/form/div[2]/div/div/div/label").click()
+        self.driver.find_element_by_xpath(".//*[@id='root']/div/div[5]/div/div[2]/form/div[2]/button").click()
+        time.sleep(3)
+        text = self.driver.find_element_by_css_selector(".watchList__watch-list-card__header___3oaYC").text
+        assert text == "Saratoga Elementary School"
+        print("Test is correct")
+        self.driver.get_screenshot_as_file("login_pop_product.png")
+        # precondition DELETE 2
+
+  #def register_pop_review_page(self):
+      #self.driver.find_element_by_link_text("Write a Review").click()
+      #try:
+      #    popup = WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".popup__popup___1SW_t")))
+      #finally:
