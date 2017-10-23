@@ -1,12 +1,9 @@
 {
   "save_institution.py::test_save_institutions_result_page": true,
   "search_from_autocomp.py::test_search_daycare": true,
-  "test_registration.py::test_register_other_verified_email": true,
-  "test_registration.py::test_register_parent_verified_email": true,
-  "test_registration.py::test_register_student": true,
-  "test_registration.py::test_register_student_verified_email": true,
-  "test_registration.py::test_register_teacher_em1_em2ver": true,
+  "test_registration.py::test_register_community_member": true,
   "test_search.py::test_search": true,
-  "test_search.py::test_search_daycare": true,
-  "test_search.py::test_search_districts": true
+  "test_search.py::test_search_city_no_state": true,
+  "test_search.py::test_search_colleges": true,
+  "test_search.py::test_search_s_letter_elem_middle_state": true
 }

@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f2d6cd9-76e7-45f1-823a-8e1f6af9bc9c" name="Default" comment="fixed cases for product page,">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_main/test_enter_via_popup.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/member_signup.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/other_signup.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/parent_signup.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/register_student_verified_email.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/student_signup.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/teacher_signup_em1_em2UnVer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_main/teacher_signup_em1_em2Ver.png" afterPath="" />
+    <list default="true" id="5f2d6cd9-76e7-45f1-823a-8e1f6af9bc9c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/a_letter__elementary_state.png" afterPath="$PROJECT_DIR$/test_main/a_letter__elementary_state.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/all_schools_link.png" afterPath="$PROJECT_DIR$/test_main/all_schools_link.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/city_no_state.png" afterPath="$PROJECT_DIR$/test_main/city_no_state.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/college.png" afterPath="$PROJECT_DIR$/test_main/college.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/college_empty_tfield.png" afterPath="$PROJECT_DIR$/test_main/college_empty_tfield.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/d_letter__elem_high_state.png" afterPath="$PROJECT_DIR$/test_main/d_letter__elem_high_state.png" />
@@ -37,10 +27,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/register_teacher_em1_em2Ver.png" afterPath="$PROJECT_DIR$/test_main/register_teacher_em1_em2Ver.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__college_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__college_state.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__daycare_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__daycare_state.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__elem_middle_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__elem_middle_state.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__high_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__high_state.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/s_letter__middle_high_state.png" afterPath="$PROJECT_DIR$/test_main/s_letter__middle_high_state.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/saved_deleted.png" afterPath="$PROJECT_DIR$/test_main/saved_deleted.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/school.png" afterPath="$PROJECT_DIR$/test_main/school.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/zipcode_no_criteria.png" afterPath="$PROJECT_DIR$/test_main/zipcode_no_criteria.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_main/zipcode_with_state.png" afterPath="$PROJECT_DIR$/test_main/zipcode_with_state.png" />
@@ -61,8 +49,8 @@
       <file leaf-file-name="application.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/precondition/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="623" column="115" lean-forward="false" selection-start-line="623" selection-start-column="115" selection-end-line="623" selection-end-column="115" />
+            <state relative-caret-position="-213">
+              <caret line="171" column="112" lean-forward="false" selection-start-line="171" selection-start-column="112" selection-end-line="171" selection-end-column="112" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -70,11 +58,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="all_schools_link.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_main/all_schools_link.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test_registration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_main/test_registration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="225">
+              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -83,8 +78,8 @@
       <file leaf-file-name="test_search.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_main/test_search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="270">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -112,16 +107,16 @@
         <option value="$PROJECT_DIR$/test_search/test_search.py" />
         <option value="$PROJECT_DIR$/test_search/save_institution.py" />
         <option value="$PROJECT_DIR$/test_main/save_institution.py" />
-        <option value="$PROJECT_DIR$/test_main/test_search.py" />
         <option value="$PROJECT_DIR$/test_main/enter_via_popup.py" />
+        <option value="$PROJECT_DIR$/test_main/test_search.py" />
         <option value="$PROJECT_DIR$/test_main/test_registration.py" />
         <option value="$PROJECT_DIR$/precondition/application.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="86" />
-    <option name="y" value="81" />
+    <option name="x" value="232" />
+    <option name="y" value="49" />
     <option name="width" value="1828" />
     <option name="height" value="981" />
   </component>
@@ -143,6 +138,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,7 +160,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -183,8 +178,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test for test_registration.test_register_student">
-    <configuration name="py.test for save_institution.test_all_schools_link" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.py.test for test_search.test_search_districts">
+    <configuration name="py.test for test_registration.test_register_other_verified_email" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -196,10 +191,10 @@
       <module name="schooldata" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;save_institution.test_all_schools_link&quot;" />
+      <option name="_new_target" value="&quot;test_registration.test_register_other_verified_email&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for test_registration.test_register_student" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for test_search.test_search_daycare" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -211,10 +206,10 @@
       <module name="schooldata" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration.test_register_student&quot;" />
+      <option name="_new_target" value="&quot;test_search.test_search_daycare&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test in save_institution.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for test_search.test_search_districts" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -226,10 +221,10 @@
       <module name="schooldata" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_main/save_institution.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_search.test_search_districts&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test in test_registration.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for test_search.test_search_with_magnifying_glass" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -241,8 +236,8 @@
       <module name="schooldata" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_main/test_registration.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_search.test_search_with_magnifying_glass&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="py.test in test_search.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -260,19 +255,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in save_institution.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for save_institution.test_all_schools_link" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_search.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_registration.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_student" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_other_verified_email" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_search.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_daycare" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_with_magnifying_glass" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_districts" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_student" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_registration.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_search.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in save_institution.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for save_institution.test_all_schools_link" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_districts" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_search.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_daycare" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test_search.test_search_with_magnifying_glass" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_registration.test_register_other_verified_email" />
       </list>
     </recent_temporary>
   </component>
@@ -406,45 +401,52 @@
       <option name="project" value="LOCAL" />
       <updated>1507560816076</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fixed cases for product page, registration">
+      <created>1508339563663</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1508339563663</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_save_institution_test_all_schools_link - 2017.10.16 at 12h 52m 08s.xml">
-      <configuration name="py.test for save_institution.test_all_schools_link" configurationId="tests" />
+    <history-entry file="py_test_for_test_search_test_search_daycare - 2017.10.23 at 12h 29m 41s.xml">
+      <configuration name="py.test for test_search.test_search_daycare" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_save_institution_test_save_from_product_page - 2017.10.16 at 12h 44m 22s.xml">
-      <configuration name="py.test for save_institution.test_save_from_product_page" configurationId="tests" />
+    <history-entry file="py_test_for_test_search_test_search_daycare - 2017.10.23 at 12h 32m 03s.xml">
+      <configuration name="py.test for test_search.test_search_daycare" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_save_institution_test_save_from_product_page - 2017.10.16 at 12h 47m 41s.xml">
-      <configuration name="py.test for save_institution.test_save_from_product_page" configurationId="tests" />
+    <history-entry file="py_test_for_test_search_test_search_daycare - 2017.10.23 at 12h 34m 47s.xml">
+      <configuration name="py.test for test_search.test_search_daycare" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_save_institution_test_save_school - 2017.10.16 at 12h 36m 26s.xml">
-      <configuration name="py.test for save_institution.test_save_school" configurationId="tests" />
+    <history-entry file="py_test_for_test_search_test_search_daycare - 2017.10.23 at 12h 35m 32s.xml">
+      <configuration name="py.test for test_search.test_search_daycare" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_save_institution_test_save_school - 2017.10.16 at 12h 43m 15s.xml">
-      <configuration name="py.test for save_institution.test_save_school" configurationId="tests" />
+    <history-entry file="py_test_for_test_search_test_search_daycare - 2017.10.23 at 12h 36m 42s.xml">
+      <configuration name="py.test for test_search.test_search_daycare" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_save_institution_test_save_school - 2017.10.16 at 12h 43m 47s.xml">
-      <configuration name="py.test for save_institution.test_save_school" configurationId="tests" />
+    <history-entry file="py_test_for_test_search_test_search_districts - 2017.10.23 at 13h 01m 58s.xml">
+      <configuration name="py.test for test_search.test_search_districts" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_registration_test_register_student - 2017.10.18 at 18h 06m 01s.xml">
-      <configuration name="py.test for test_registration.test_register_student" configurationId="tests" />
+    <history-entry file="py_test_for_test_search_test_search_districts - 2017.10.23 at 13h 04m 26s.xml">
+      <configuration name="py.test for test_search.test_search_districts" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_save_institution_py - 2017.10.18 at 17h 02m 08s.xml">
-      <configuration name="py.test in save_institution.py" configurationId="tests" />
+    <history-entry file="py_test_for_test_search_test_search_with_magnifying_glass - 2017.10.23 at 12h 31m 11s.xml">
+      <configuration name="py.test for test_search.test_search_with_magnifying_glass" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_registration_py - 2017.10.18 at 17h 44m 45s.xml">
-      <configuration name="py.test in test_registration.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_search_py - 2017.10.23 at 12h 24m 12s.xml">
+      <configuration name="py.test in test_search.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_search_py - 2017.10.18 at 17h 07m 39s.xml">
+    <history-entry file="py_test_in_test_search_py - 2017.10.23 at 12h 51m 10s.xml">
       <configuration name="py.test in test_search.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="81" width="1828" height="981" extended-state="0" />
+    <frame x="232" y="49" width="1828" height="981" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2469205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25531915" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39503387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -452,7 +454,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844242" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844242" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39841986" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -479,23 +481,14 @@
     <MESSAGE value="last 1" />
     <MESSAGE value="last 12" />
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="fixed cases for product page, registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed cases for product page, registration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/precondition/application.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_main/test_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1755">
@@ -796,16 +789,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_main/all_schools_link.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_main/save_institution.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="30" column="10" lean-forward="true" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,26 +803,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_main/test_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/test_main/all_schools_link.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_main/register_member.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_main/test_registration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="225">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_main/test_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/precondition/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="623" column="115" lean-forward="false" selection-start-line="623" selection-start-column="115" selection-end-line="623" selection-end-column="115" />
+        <state relative-caret-position="-213">
+          <caret line="171" column="112" lean-forward="false" selection-start-line="171" selection-start-column="112" selection-end-line="171" selection-end-column="112" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

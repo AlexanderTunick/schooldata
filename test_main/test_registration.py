@@ -18,7 +18,7 @@ def test_register_other(app):
     app.register_other()
     app.log_out()
 
-def test_register_community_member(app):
+def test_register_member(app):
     app.sign_up()
     app.register_member()
     app.log_out()
