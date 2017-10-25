@@ -1,9 +1,10 @@
 {
   "save_institution.py::test_save_institutions_result_page": true,
   "search_from_autocomp.py::test_search_daycare": true,
+  "test_enter_via_popup.py::test_login_pop_product": true,
   "test_registration.py::test_register_community_member": true,
   "test_search.py::test_search": true,
-  "test_search.py::test_search_city_no_state": true,
   "test_search.py::test_search_colleges": true,
-  "test_search.py::test_search_s_letter_elem_middle_state": true
+  "test_search.py::test_search_districts": true,
+  "test_search.py::test_search_schools": true
 }

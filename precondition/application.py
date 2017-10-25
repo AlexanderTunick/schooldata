@@ -49,9 +49,9 @@ class Application:
      self.driver.execute_script("window.scrollTo(50, 300);")
      self.driver.find_element_by_css_selector(".geosuggest__input").send_keys("Dallas")
      try:
-         address = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".geosuggest__suggests.registerForm__suggest-list___3BB71.personalProfile__suggest-list___EmB61")))
+         address = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".geosuggest__suggests.registerForm__suggest-list___3BB71.personalProfile__suggest-list___EmB61")))
      finally:
-         self.driver.find_element_by_css_selector(".geosuggest__item.addressautocomplete__item___3rnxu>span").click()
+         self.driver.find_element_by_css_selector(".geosuggest__item.addressautocomplete__item___3rnxu").click()
          time.sleep(1)
 
  def sign_up_student(self):
@@ -68,7 +68,7 @@ class Application:
          address = WebDriverWait(self.driver, 10).until(
              EC.element_to_be_clickable((By.CSS_SELECTOR, ".geosuggest__suggests.registerForm__suggest-list___3BB71.personalProfile__suggest-list___EmB61")))
      finally:
-         self.driver.find_element_by_css_selector(".geosuggest__item.addressautocomplete__item___3rnxu>span").click()
+         self.driver.find_element_by_css_selector(".geosuggest__item.addressautocomplete__item___3rnxu").click()
          time.sleep(1)
 
  def delete_profile(self):
@@ -176,7 +176,7 @@ class Application:
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     element = self.driver.find_element_by_xpath(".//*[@id='teachers']")
+     #element = self.driver.find_element_by_xpath(".//*[@id='teachers']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
@@ -195,7 +195,7 @@ class Application:
 
  def search_colleges(self):
      self.driver.find_element_by_css_selector(".homePage__query-wrapper___2CdIM>input").send_keys("Smith College")
-     self.driver.find_element_by_xpath("//button[@type='submit']").click()
+     self.driver.find_element_by_css_selector(".autocomplete__item___LNE_O.autocomplete__hover___3F9U4").click()
      time.sleep(5)
      self.driver.get_screenshot_as_file("college.png")
      element = self.driver.find_element_by_xpath(".//*[@id='general']")
@@ -206,7 +206,7 @@ class Application:
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
-     element = self.driver.find_element_by_xpath(".//*[@id='teachers']")
+     #element = self.driver.find_element_by_xpath(".//*[@id='teachers']")
      actions = ActionChains(self.driver)
      actions.move_to_element(element).perform()
      time.sleep(1)
