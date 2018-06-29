@@ -22,10 +22,10 @@ class Application:
 
  #LOGIN ============
  def login(self):
-     self.driver.get("https://www.schooldata-test.com")
+     self.driver.get("")
 
  def sign_in(self):
-     self.driver.get("https://www.schooldata-test.com/login")
+     self.driver.get("")
      self.driver.find_element_by_id("email").send_keys("test@gmail.com")
      self.driver.find_element_by_id("password").send_keys("123456")
      time.sleep(1)
@@ -38,7 +38,7 @@ class Application:
 
  # SIGN UP REGISTRATION ==========
  def sign_up(self):
-     self.driver.get("https://www.schooldata-test.com/register")
+     self.driver.get("")
      self.driver.find_element_by_id("firstName").send_keys("AutoBot")
      self.driver.find_element_by_id("lastName").send_keys("Test")
      mail = self.driver.find_element_by_id("email")
@@ -55,7 +55,7 @@ class Application:
          time.sleep(1)
 
  def sign_up_student(self):
-     self.driver.get("https://www.schooldata-test.com/register")
+     self.driver.get("")
      self.driver.find_element_by_id("firstName").send_keys("AutoBot")
      self.driver.find_element_by_id("lastName").send_keys("Test")
      self.driver.find_element_by_id("email").send_keys("drakemac2030@gmail.com")
